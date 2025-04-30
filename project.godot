@@ -11,8 +11,17 @@ config_version=5
 [application]
 
 config/name="movie_found"
+run/main_scene="uid://c651u1dyw3ogq"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=540
+window/size/viewport_height=960
+window/size/resizable=false
+window/size/window_width_override=540
+window/size/window_height_override=960
 
 [rendering]
 
