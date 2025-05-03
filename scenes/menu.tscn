@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=3 uid="uid://c651u1dyw3ogq"]
 
 [ext_resource type="Script" uid="uid://ciafvv0j64m6l" path="res://scripts/menu.gd" id="1_vjb58"]
-[ext_resource type="Texture2D" uid="uid://ca8chhnuuotjp" path="res://recources/images/logo.png" id="3_con2f"]
+[ext_resource type="Texture2D" uid="uid://sphk7yexwgkx" path="res://recources/images/logo_test.png" id="3_13sgg"]
 [ext_resource type="FontFile" uid="uid://c2gn1q550ouoi" path="res://recources/fonts/santsation/Sansation-Regular.ttf" id="3_v86rl"]
 [ext_resource type="FontFile" uid="uid://causshvbabg45" path="res://recources/fonts/santsation/Sansation-Bold.ttf" id="4_4ytvr"]
 [ext_resource type="Texture2D" uid="uid://b7gcowsg7qdbq" path="res://recources/images/account_icon.png" id="4_g3eks"]
@@ -124,7 +124,7 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_vjb58")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_vjb58")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_vjb58")
 theme_override_styles/normal = SubResource("StyleBoxFlat_vjb58")
-icon = ExtResource("3_con2f")
+icon = ExtResource("3_13sgg")
 icon_alignment = 1
 expand_icon = true
 
