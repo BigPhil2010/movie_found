@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://c2gn1q550ouoi"
-path="res://.godot/imported/Sansation-Regular.ttf-0d54f44e1c7e31e9c4ceb019de92b43a.fontdata"
+path="res://.godot/imported/Sansation-Regular.ttf-f0eaff41d69f1986f3b511c8e1dca461.fontdata"
 
 [deps]
 
-source_file="res://recources/Sansation-Regular.ttf"
-dest_files=["res://.godot/imported/Sansation-Regular.ttf-0d54f44e1c7e31e9c4ceb019de92b43a.fontdata"]
+source_file="res://recources/fonts/santsation/Sansation-Regular.ttf"
+dest_files=["res://.godot/imported/Sansation-Regular.ttf-f0eaff41d69f1986f3b511c8e1dca461.fontdata"]
 
 [params]
 
