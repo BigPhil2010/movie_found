@@ -1,11 +1,52 @@
-[gd_scene load_steps=6 format=3 uid="uid://c651u1dyw3ogq"]
+[gd_scene load_steps=10 format=3 uid="uid://c651u1dyw3ogq"]
 
 [ext_resource type="Script" uid="uid://ciafvv0j64m6l" path="res://scripts/menu.gd" id="1_vjb58"]
 [ext_resource type="FontFile" uid="uid://c2gn1q550ouoi" path="res://recources/Sansation-Regular.ttf" id="2_con2f"]
+[ext_resource type="Texture2D" uid="uid://ca8chhnuuotjp" path="res://recources/images/logo.png" id="3_con2f"]
 
-[sub_resource type="Theme" id="Theme_mhnvy"]
-default_font = ExtResource("2_con2f")
-default_font_size = 50
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vjb58"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ytvr"]
+bg_color = Color(0.341176, 0.619608, 0.886275, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.247059, 0.533333, 0.803922, 1)
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+expand_margin_left = 10.0
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g3eks"]
+bg_color = Color(0.265837, 0.555494, 0.825936, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.191337, 0.461374, 0.712163, 1)
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+expand_margin_left = 10.0
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mhnvy"]
+bg_color = Color(0.341923, 0.620442, 0.887867, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.247059, 0.533333, 0.803922, 1)
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+expand_margin_left = 10.0
+expand_margin_right = 10.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vjb58"]
 bg_color = Color(0.517647, 0.792157, 0.858824, 1)
@@ -28,10 +69,15 @@ offset_bottom = 960.0
 
 [node name="Button" type="Button" parent="."]
 offset_left = 53.0
-offset_top = 397.0
+offset_top = 428.0
 offset_right = 496.0
 offset_bottom = 532.0
-theme = SubResource("Theme_mhnvy")
+theme_override_fonts/font = ExtResource("2_con2f")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vjb58")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4ytvr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_g3eks")
+theme_override_styles/normal = SubResource("StyleBoxFlat_mhnvy")
 text = "Find your movie"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
@@ -43,6 +89,7 @@ offset_bottom = 960.0
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/normal = SubResource("StyleBoxFlat_vjb58")
+icon = ExtResource("3_con2f")
 
 [node name="accountBTN" type="Button" parent="HBoxContainer"]
 layout_mode = 2
