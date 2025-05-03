@@ -1,13 +1,14 @@
-[gd_scene load_steps=9 format=3 uid="uid://cy7sgo7l5d2kl"]
+[gd_scene load_steps=10 format=3 uid="uid://cy7sgo7l5d2kl"]
 
 [ext_resource type="FontFile" uid="uid://c2gn1q550ouoi" path="res://recources/fonts/santsation/Sansation-Regular.ttf" id="1_cymld"]
-[ext_resource type="Script" uid="uid://baarcef8asgs6" path="res://scripts/search.gd" id="1_u14sg"]
+[ext_resource type="Script" path="res://scripts/search.gd" id="1_u14sg"]
 [ext_resource type="Texture2D" uid="uid://kxypdvag3xim" path="res://recources/images/background.png" id="2_j6r5u"]
+[ext_resource type="FontFile" uid="uid://causshvbabg45" path="res://recources/fonts/santsation/Sansation-Bold.ttf" id="3_xlev1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j6r5u"]
 bg_color = Color(1, 1, 1, 1)
-border_width_right = 2
-border_width_bottom = 2
+border_width_right = 3
+border_width_bottom = 3
 border_color = Color(0, 0, 0, 1)
 expand_margin_right = 10.0
 
@@ -74,7 +75,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("1_cymld")
+theme_override_fonts/font = ExtResource("3_xlev1")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/focus = SubResource("StyleBoxFlat_j6r5u")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_j6r5u")

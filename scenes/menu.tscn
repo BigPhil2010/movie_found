@@ -10,6 +10,21 @@
 [ext_resource type="Texture2D" uid="uid://di40j4pdapnkf" path="res://recources/images/prime_logo.png" id="7_13sgg"]
 [ext_resource type="Texture2D" uid="uid://dx88lo3i6v1pl" path="res://recources/images/logo_weiß.png" id="8_13sgg"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vjb58"]
+bg_color = Color(0.517647, 0.792157, 0.858824, 1)
+border_width_top = 5
+border_width_right = 6
+border_color = Color(0, 0, 0, 1)
+expand_margin_right = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_con2f"]
+bg_color = Color(1, 1, 1, 1)
+border_width_top = 5
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_13sgg"]
+bg_color = Color(0.172833, 0.172833, 0.172833, 1)
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vjb58"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ytvr"]
@@ -56,42 +71,12 @@ expand_margin_right = 10.0
 shadow_color = Color(0.215902, 0.215902, 0.215902, 0.6)
 shadow_size = 4
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vjb58"]
-bg_color = Color(0.517647, 0.792157, 0.858824, 1)
-border_width_top = 5
-border_width_right = 6
-border_color = Color(0, 0, 0, 1)
-expand_margin_right = 5.0
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_con2f"]
-bg_color = Color(1, 1, 1, 1)
-border_width_top = 5
-border_color = Color(0, 0, 0, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_13sgg"]
-bg_color = Color(0.172833, 0.172833, 0.172833, 1)
-
 [node name="menu" type="Node2D"]
 script = ExtResource("1_vjb58")
 
 [node name="background" type="Sprite2D" parent="."]
 position = Vector2(270, 480)
 texture = ExtResource("2_i6lef")
-
-[node name="Button" type="Button" parent="."]
-offset_left = 72.0
-offset_top = 480.0
-offset_right = 472.0
-offset_bottom = 556.0
-size_flags_horizontal = 4
-size_flags_vertical = 6
-theme_override_fonts/font = ExtResource("3_v86rl")
-theme_override_font_sizes/font_size = 50
-theme_override_styles/focus = SubResource("StyleBoxEmpty_vjb58")
-theme_override_styles/hover = SubResource("StyleBoxFlat_4ytvr")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_g3eks")
-theme_override_styles/normal = SubResource("StyleBoxFlat_mhnvy")
-text = "Find your movie"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 custom_minimum_size = Vector2(0, 60)
@@ -142,6 +127,7 @@ offset_bottom = 114.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_13sgg")
 
 [node name="Label_title" type="Label" parent="header"]
+layout_mode = 0
 offset_left = 137.0
 offset_top = 25.0
 offset_right = 564.0
@@ -213,6 +199,21 @@ rotation = -0.23911
 scale = Vector2(0.35, 0.35)
 texture = ExtResource("5_g3eks")
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[node name="Button" type="Button" parent="."]
+offset_left = 72.0
+offset_top = 480.0
+offset_right = 472.0
+offset_bottom = 556.0
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("3_v86rl")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vjb58")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4ytvr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_g3eks")
+theme_override_styles/normal = SubResource("StyleBoxFlat_mhnvy")
+text = "Find your movie"
+
 [connection signal="pressed" from="HBoxContainer/menuBTN" to="." method="_on_menu_btn_pressed"]
 [connection signal="pressed" from="HBoxContainer/accountBTN" to="." method="_on_account_btn_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
