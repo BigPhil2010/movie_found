@@ -167,18 +167,18 @@ rotation = 0.404916
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_v86rl")
 theme_override_font_sizes/font_size = 35
-text = "Familie"
+text = "Family"
 
 [node name="Label4" type="Label" parent="."]
-offset_left = 296.0
-offset_top = 353.0
-offset_right = 457.0
-offset_bottom = 393.0
+offset_left = 327.0
+offset_top = 349.0
+offset_right = 488.0
+offset_bottom = 389.0
 rotation = -0.13439
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_v86rl")
 theme_override_font_sizes/font_size = 35
-text = "Kostenlos"
+text = "Free"
 
 [node name="Label5" type="Label" parent="."]
 offset_left = 229.0
