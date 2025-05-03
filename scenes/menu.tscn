@@ -142,6 +142,7 @@ offset_bottom = 114.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_13sgg")
 
 [node name="Label_title" type="Label" parent="header"]
+layout_mode = 0
 offset_left = 137.0
 offset_top = 25.0
 offset_right = 564.0
