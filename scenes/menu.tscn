@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c651u1dyw3ogq"]
 
-[ext_resource type="Script" uid="uid://ciafvv0j64m6l" path="res://sripts/menu.gd" id="1_vjb58"]
-[ext_resource type="FontFile" uid="uid://c2gn1q550ouoi" path="res://recourses/Sansation-Regular.ttf" id="2_con2f"]
+[ext_resource type="Script" uid="uid://ciafvv0j64m6l" path="res://scripts/menu.gd" id="1_vjb58"]
+[ext_resource type="FontFile" uid="uid://c2gn1q550ouoi" path="res://recources/Sansation-Regular.ttf" id="2_con2f"]
 
 [sub_resource type="Theme" id="Theme_mhnvy"]
 default_font = ExtResource("2_con2f")
