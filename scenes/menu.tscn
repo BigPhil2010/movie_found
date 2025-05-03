@@ -120,7 +120,7 @@ theme_override_font_sizes/font_size = 55
 text = "MOVIE FOUND"
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(186, 664)
+position = Vector2(223, 707)
 rotation = -0.23911
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_g3eks")
