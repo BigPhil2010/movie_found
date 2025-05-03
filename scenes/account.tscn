@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://baeg75mgbl4vk"]
 
-[ext_resource type="Texture2D" uid="uid://ca8chhnuuotjp" path="res://recources/images/logo.png" id="1_7sidg"]
 [ext_resource type="Script" uid="uid://vtu1yk6qn0s4" path="res://scripts/account.gd" id="1_o8dwq"]
 [ext_resource type="Texture2D" uid="uid://kxypdvag3xim" path="res://recources/images/background.png" id="2_jhb3k"]
-[ext_resource type="Texture2D" uid="uid://b7gcowsg7qdbq" path="res://recources/images/account_icon.png" id="3_jhb3k"]
+[ext_resource type="Texture2D" uid="uid://sphk7yexwgkx" path="res://recources/images/logo_border.png" id="3_jhb3k"]
+[ext_resource type="Texture2D" uid="uid://brwnun3m2elgd" path="res://recources/images/account_icon_border.png" id="4_motgx"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ca2pp"]
 bg_color = Color(1, 1, 1, 1)
@@ -45,7 +45,7 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_ca2pp")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_ca2pp")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_ca2pp")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ca2pp")
-icon = ExtResource("1_7sidg")
+icon = ExtResource("3_jhb3k")
 icon_alignment = 1
 expand_icon = true
 
@@ -63,7 +63,7 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_motgx")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_motgx")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_motgx")
 theme_override_styles/normal = SubResource("StyleBoxFlat_motgx")
-icon = ExtResource("3_jhb3k")
+icon = ExtResource("4_motgx")
 icon_alignment = 1
 expand_icon = true
 
