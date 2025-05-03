@@ -1,0 +1,70 @@
+[gd_scene load_steps=6 format=3 uid="uid://baeg75mgbl4vk"]
+
+[ext_resource type="Texture2D" uid="uid://ca8chhnuuotjp" path="res://recources/images/logo.png" id="1_7sidg"]
+[ext_resource type="Script" uid="uid://vtu1yk6qn0s4" path="res://scripts/account.gd" id="1_o8dwq"]
+[ext_resource type="Texture2D" uid="uid://b7gcowsg7qdbq" path="res://recources/images/account_icon.png" id="3_jhb3k"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ca2pp"]
+bg_color = Color(1, 1, 1, 1)
+border_width_top = 5
+border_width_right = 5
+border_color = Color(0, 0, 0, 1)
+expand_margin_right = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_motgx"]
+bg_color = Color(0.517647, 0.792157, 0.858824, 1)
+border_width_top = 5
+border_color = Color(0, 0, 0, 1)
+
+[node name="account" type="Node2D"]
+script = ExtResource("1_o8dwq")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 540.0
+offset_bottom = 960.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(0, 60)
+offset_top = 865.0
+offset_right = 540.0
+offset_bottom = 960.0
+size_flags_vertical = 10
+
+[node name="menuBTN" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/focus = SubResource("StyleBoxFlat_ca2pp")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_ca2pp")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ca2pp")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_ca2pp")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_ca2pp")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_ca2pp")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ca2pp")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_ca2pp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ca2pp")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_ca2pp")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ca2pp")
+icon = ExtResource("1_7sidg")
+icon_alignment = 1
+expand_icon = true
+
+[node name="accountBTN" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/focus = SubResource("StyleBoxFlat_motgx")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_motgx")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_motgx")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_motgx")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_motgx")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_motgx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_motgx")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_motgx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_motgx")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_motgx")
+theme_override_styles/normal = SubResource("StyleBoxFlat_motgx")
+icon = ExtResource("3_jhb3k")
+icon_alignment = 1
+expand_icon = true
+
+[connection signal="pressed" from="HBoxContainer/menuBTN" to="." method="_on_menu_btn_pressed"]
+[connection signal="pressed" from="HBoxContainer/accountBTN" to="." method="_on_account_btn_pressed"]
