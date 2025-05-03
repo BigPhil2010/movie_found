@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://di40j4pdapnkf"
-path="res://.godot/imported/prime logo.png-32a863738c9e74a49aa1c2bd79299157.ctex"
+uid="uid://brwnun3m2elgd"
+path="res://.godot/imported/account_icon_border.png-4225ac7b752e3563453759b3a88abe64.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://recources/images/prime logo.png"
-dest_files=["res://.godot/imported/prime logo.png-32a863738c9e74a49aa1c2bd79299157.ctex"]
+source_file="res://recources/images/account_icon_border.png"
+dest_files=["res://.godot/imported/account_icon_border.png-4225ac7b752e3563453759b3a88abe64.ctex"]
 
 [params]
 

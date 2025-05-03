@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" uid="uid://ciafvv0j64m6l" path="res://scripts/menu.gd" id="1_vjb58"]
 [ext_resource type="Texture2D" uid="uid://kxypdvag3xim" path="res://recources/images/background.png" id="2_i6lef"]
-[ext_resource type="Texture2D" uid="uid://sphk7yexwgkx" path="res://recources/images/logo_test.png" id="3_13sgg"]
+[ext_resource type="Texture2D" uid="uid://sphk7yexwgkx" path="res://recources/images/logo_border.png" id="3_13sgg"]
 [ext_resource type="FontFile" uid="uid://c2gn1q550ouoi" path="res://recources/fonts/santsation/Sansation-Regular.ttf" id="3_v86rl"]
 [ext_resource type="FontFile" uid="uid://causshvbabg45" path="res://recources/fonts/santsation/Sansation-Bold.ttf" id="4_4ytvr"]
-[ext_resource type="Texture2D" uid="uid://b7gcowsg7qdbq" path="res://recources/images/account_icon.png" id="4_g3eks"]
-[ext_resource type="Texture2D" uid="uid://bxj2bxocftt7w" path="res://recources/images/netflix logo.png" id="5_g3eks"]
-[ext_resource type="Texture2D" uid="uid://di40j4pdapnkf" path="res://recources/images/prime logo.png" id="7_13sgg"]
+[ext_resource type="Texture2D" uid="uid://bxj2bxocftt7w" path="res://recources/images/netflix_logo.png" id="5_g3eks"]
+[ext_resource type="Texture2D" uid="uid://brwnun3m2elgd" path="res://recources/images/account_icon_border.png" id="5_i6lef"]
+[ext_resource type="Texture2D" uid="uid://di40j4pdapnkf" path="res://recources/images/prime_logo.png" id="7_13sgg"]
 [ext_resource type="Texture2D" uid="uid://dx88lo3i6v1pl" path="res://recources/images/logo_weiß.png" id="8_13sgg"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vjb58"]
@@ -74,24 +74,9 @@ bg_color = Color(0.172833, 0.172833, 0.172833, 1)
 [node name="menu" type="Node2D"]
 script = ExtResource("1_vjb58")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 540.0
-offset_bottom = 960.0
-
-[node name="Sprite2D4" type="Sprite2D" parent="."]
+[node name="background" type="Sprite2D" parent="."]
 position = Vector2(270, 480)
 texture = ExtResource("2_i6lef")
-
-[node name="Label2" type="Label" parent="."]
-offset_left = 109.0
-offset_top = 559.0
-offset_right = 226.0
-offset_bottom = 605.0
-rotation = 6.10516
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_v86rl")
-theme_override_font_sizes/font_size = 35
-text = "Horror"
 
 [node name="Button" type="Button" parent="."]
 offset_left = 72.0
@@ -147,34 +132,43 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_con2f")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_con2f")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_con2f")
 theme_override_styles/normal = SubResource("StyleBoxFlat_con2f")
-icon = ExtResource("4_g3eks")
+icon = ExtResource("5_i6lef")
 icon_alignment = 1
 expand_icon = true
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(390, 674)
-rotation = -0.23911
-scale = Vector2(0.35, 0.35)
-texture = ExtResource("5_g3eks")
+[node name="header" type="Label" parent="."]
+offset_right = 540.0
+offset_bottom = 114.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_13sgg")
 
-[node name="Sprite2D3" type="Sprite2D" parent="."]
-position = Vector2(116, 324)
-rotation = 0.120428
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_13sgg")
+[node name="Label_title" type="Label" parent="header"]
+offset_left = 137.0
+offset_top = 25.0
+offset_right = 564.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_4ytvr")
+theme_override_font_sizes/font_size = 55
+text = "MOVIE FOUND"
 
-[node name="Label3" type="Label" parent="."]
-offset_left = 130.0
-offset_top = 722.0
-offset_right = 246.0
-offset_bottom = 762.0
-rotation = 0.404916
+[node name="Sprite2D_logo" type="Sprite2D" parent="header"]
+position = Vector2(69, 51)
+scale = Vector2(0.21, 0.21)
+texture = ExtResource("8_13sgg")
+
+[node name="splash_text" type="Node2D" parent="."]
+
+[node name="Label_2,5h" type="Label" parent="splash_text"]
+offset_left = 250.0
+offset_top = 205.0
+offset_right = 317.0
+offset_bottom = 245.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_v86rl")
 theme_override_font_sizes/font_size = 35
-text = "Family"
+text = "2,5h"
 
-[node name="Label4" type="Label" parent="."]
+[node name="Label_Free" type="Label" parent="splash_text"]
 offset_left = 352.0
 offset_top = 339.0
 offset_right = 513.0
@@ -185,35 +179,39 @@ theme_override_fonts/font = ExtResource("3_v86rl")
 theme_override_font_sizes/font_size = 35
 text = "Free"
 
-[node name="Label5" type="Label" parent="."]
-offset_left = 250.0
-offset_top = 205.0
-offset_right = 317.0
-offset_bottom = 245.0
+[node name="Label_Family" type="Label" parent="splash_text"]
+offset_left = 130.0
+offset_top = 722.0
+offset_right = 246.0
+offset_bottom = 762.0
+rotation = 0.404916
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_v86rl")
 theme_override_font_sizes/font_size = 35
-text = "2,5h"
+text = "Family"
 
-[node name="Label6" type="Label" parent="."]
-offset_right = 540.0
-offset_bottom = 114.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_13sgg")
+[node name="Label_Horror" type="Label" parent="splash_text"]
+offset_left = 109.0
+offset_top = 559.0
+offset_right = 226.0
+offset_bottom = 605.0
+rotation = 6.10516
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_v86rl")
+theme_override_font_sizes/font_size = 35
+text = "Horror"
 
-[node name="Label" type="Label" parent="."]
-offset_left = 137.0
-offset_top = 25.0
-offset_right = 564.0
-offset_bottom = 108.0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("4_4ytvr")
-theme_override_font_sizes/font_size = 55
-text = "MOVIE FOUND"
+[node name="Sprite2D_prime" type="Sprite2D" parent="splash_text"]
+position = Vector2(116, 324)
+rotation = 0.120428
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_13sgg")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(69, 51)
-scale = Vector2(0.21, 0.21)
-texture = ExtResource("8_13sgg")
+[node name="Sprite2D_Netflix" type="Sprite2D" parent="splash_text"]
+position = Vector2(390, 674)
+rotation = -0.23911
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("5_g3eks")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/menuBTN" to="." method="_on_menu_btn_pressed"]

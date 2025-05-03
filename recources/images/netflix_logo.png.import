@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxj2bxocftt7w"
-path="res://.godot/imported/netflix logo.png-611064c8105104ba2616284cdf0810bf.ctex"
+path="res://.godot/imported/netflix_logo.png-3ff83ef77ad1e54af9240aec48b80b06.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://recources/images/netflix logo.png"
-dest_files=["res://.godot/imported/netflix logo.png-611064c8105104ba2616284cdf0810bf.ctex"]
+source_file="res://recources/images/netflix_logo.png"
+dest_files=["res://.godot/imported/netflix_logo.png-3ff83ef77ad1e54af9240aec48b80b06.ctex"]
 
 [params]
 
