@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://cy7sgo7l5d2kl"]
 
 [ext_resource type="FontFile" uid="uid://c2gn1q550ouoi" path="res://recources/fonts/santsation/Sansation-Regular.ttf" id="1_cymld"]
-[ext_resource type="Script" path="res://scripts/search.gd" id="1_u14sg"]
+[ext_resource type="Script" uid="uid://baarcef8asgs6" path="res://scripts/search.gd" id="1_u14sg"]
 [ext_resource type="Texture2D" uid="uid://kxypdvag3xim" path="res://recources/images/background.png" id="2_j6r5u"]
 [ext_resource type="FontFile" uid="uid://causshvbabg45" path="res://recources/fonts/santsation/Sansation-Bold.ttf" id="3_xlev1"]
 
@@ -97,12 +97,83 @@ text = "Title"
 label_settings = SubResource("LabelSettings_u14sg")
 horizontal_alignment = 1
 
+[node name="HBoxContainer5" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button9" type="Button" parent="VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_cymld")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cymld")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_u14sg")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_cymld")
+theme_override_styles/hover = SubResource("StyleBoxFlat_u14sg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cymld")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u14sg")
+toggle_mode = true
+text = "BTN9"
+
+[node name="Button10" type="Button" parent="VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_cymld")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cymld")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_u14sg")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_cymld")
+theme_override_styles/hover = SubResource("StyleBoxFlat_u14sg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cymld")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u14sg")
+toggle_mode = true
+text = "BTN10"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button5" type="Button" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_cymld")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cymld")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_u14sg")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_cymld")
+theme_override_styles/hover = SubResource("StyleBoxFlat_u14sg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cymld")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u14sg")
+toggle_mode = true
+text = "BTN5"
+
+[node name="Button6" type="Button" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_cymld")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cymld")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_u14sg")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_cymld")
+theme_override_styles/hover = SubResource("StyleBoxFlat_u14sg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cymld")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u14sg")
+toggle_mode = true
+text = "BTN6"
+
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
 [node name="Button1" type="Button" parent="VBoxContainer/HBoxContainer"]
-visible = false
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
@@ -119,7 +190,6 @@ toggle_mode = true
 text = "BTN1"
 
 [node name="Button2" type="Button" parent="VBoxContainer/HBoxContainer"]
-visible = false
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
@@ -140,7 +210,6 @@ layout_mode = 2
 size_flags_vertical = 3
 
 [node name="Button3" type="Button" parent="VBoxContainer/HBoxContainer2"]
-visible = false
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
@@ -157,7 +226,6 @@ toggle_mode = true
 text = "BTN3"
 
 [node name="Button4" type="Button" parent="VBoxContainer/HBoxContainer2"]
-visible = false
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
@@ -173,50 +241,11 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_u14sg")
 toggle_mode = true
 text = "BTN4"
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="Button5" type="Button" parent="VBoxContainer/HBoxContainer3"]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("1_cymld")
-theme_override_font_sizes/font_size = 50
-theme_override_styles/focus = SubResource("StyleBoxEmpty_cymld")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_u14sg")
-theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_cymld")
-theme_override_styles/hover = SubResource("StyleBoxFlat_u14sg")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_cymld")
-theme_override_styles/normal = SubResource("StyleBoxFlat_u14sg")
-toggle_mode = true
-text = "BTN5"
-
-[node name="Button6" type="Button" parent="VBoxContainer/HBoxContainer3"]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("1_cymld")
-theme_override_font_sizes/font_size = 50
-theme_override_styles/focus = SubResource("StyleBoxEmpty_cymld")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_u14sg")
-theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_cymld")
-theme_override_styles/hover = SubResource("StyleBoxFlat_u14sg")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_cymld")
-theme_override_styles/normal = SubResource("StyleBoxFlat_u14sg")
-toggle_mode = true
-text = "BTN6"
-
 [node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
 [node name="Button7" type="Button" parent="VBoxContainer/HBoxContainer4"]
-visible = false
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
@@ -233,7 +262,6 @@ toggle_mode = true
 text = "BTN7"
 
 [node name="Button8" type="Button" parent="VBoxContainer/HBoxContainer4"]
-visible = false
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
@@ -248,44 +276,6 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_cymld")
 theme_override_styles/normal = SubResource("StyleBoxFlat_u14sg")
 toggle_mode = true
 text = "BTN8"
-
-[node name="HBoxContainer5" type="HBoxContainer" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="Button9" type="Button" parent="VBoxContainer/HBoxContainer5"]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("1_cymld")
-theme_override_font_sizes/font_size = 50
-theme_override_styles/focus = SubResource("StyleBoxEmpty_cymld")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_u14sg")
-theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_cymld")
-theme_override_styles/hover = SubResource("StyleBoxFlat_u14sg")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_cymld")
-theme_override_styles/normal = SubResource("StyleBoxFlat_u14sg")
-toggle_mode = true
-text = "BTN9"
-
-[node name="Button10" type="Button" parent="VBoxContainer/HBoxContainer5"]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("1_cymld")
-theme_override_font_sizes/font_size = 50
-theme_override_styles/focus = SubResource("StyleBoxEmpty_cymld")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_u14sg")
-theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_cymld")
-theme_override_styles/hover = SubResource("StyleBoxFlat_u14sg")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_cymld")
-theme_override_styles/normal = SubResource("StyleBoxFlat_u14sg")
-toggle_mode = true
-text = "BTN10"
 
 [node name="HBoxContainer6" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
@@ -341,3 +331,5 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_u14sg")
 text = "next"
 
 [connection signal="pressed" from="VBoxContainer/Button_home" to="." method="_on_button_home_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer6/Button_back" to="." method="_on_button_back_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer6/Button_next" to="." method="_on_button_next_pressed"]
