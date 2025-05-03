@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://cy7sgo7l5d2kl"]
 
 [ext_resource type="FontFile" uid="uid://c2gn1q550ouoi" path="res://recources/fonts/santsation/Sansation-Regular.ttf" id="1_cymld"]
-[ext_resource type="Script" uid="uid://baarcef8asgs6" path="res://scripts/search.gd" id="1_u14sg"]
+[ext_resource type="Script" path="res://scripts/search.gd" id="1_u14sg"]
 [ext_resource type="Texture2D" uid="uid://kxypdvag3xim" path="res://recources/images/background.png" id="2_j6r5u"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j6r5u"]
