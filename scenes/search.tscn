@@ -248,5 +248,4 @@ theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_cymld")
 theme_override_styles/hover = SubResource("StyleBoxFlat_u14sg")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_cymld")
 theme_override_styles/normal = SubResource("StyleBoxFlat_u14sg")
-toggle_mode = true
 text = "next"
