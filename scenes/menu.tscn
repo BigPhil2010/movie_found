@@ -1,6 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://c651u1dyw3ogq"]
+[gd_scene load_steps=17 format=3 uid="uid://c651u1dyw3ogq"]
 
 [ext_resource type="Script" uid="uid://ciafvv0j64m6l" path="res://scripts/menu.gd" id="1_vjb58"]
+[ext_resource type="Texture2D" uid="uid://kxypdvag3xim" path="res://recources/images/background.png" id="2_i6lef"]
 [ext_resource type="Texture2D" uid="uid://sphk7yexwgkx" path="res://recources/images/logo_test.png" id="3_13sgg"]
 [ext_resource type="FontFile" uid="uid://c2gn1q550ouoi" path="res://recources/fonts/santsation/Sansation-Regular.ttf" id="3_v86rl"]
 [ext_resource type="FontFile" uid="uid://causshvbabg45" path="res://recources/fonts/santsation/Sansation-Bold.ttf" id="4_4ytvr"]
@@ -77,6 +78,10 @@ script = ExtResource("1_vjb58")
 offset_right = 540.0
 offset_bottom = 960.0
 
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(270, 480)
+texture = ExtResource("2_i6lef")
+
 [node name="Label2" type="Label" parent="."]
 offset_left = 109.0
 offset_top = 559.0
@@ -147,21 +152,21 @@ icon_alignment = 1
 expand_icon = true
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(369, 672)
+position = Vector2(390, 674)
 rotation = -0.23911
 scale = Vector2(0.35, 0.35)
 texture = ExtResource("5_g3eks")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
-position = Vector2(139, 361)
+position = Vector2(116, 324)
 rotation = 0.120428
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_13sgg")
 
 [node name="Label3" type="Label" parent="."]
-offset_left = 155.0
+offset_left = 130.0
 offset_top = 722.0
-offset_right = 271.0
+offset_right = 246.0
 offset_bottom = 762.0
 rotation = 0.404916
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -170,10 +175,10 @@ theme_override_font_sizes/font_size = 35
 text = "Family"
 
 [node name="Label4" type="Label" parent="."]
-offset_left = 327.0
-offset_top = 349.0
-offset_right = 488.0
-offset_bottom = 389.0
+offset_left = 352.0
+offset_top = 339.0
+offset_right = 513.0
+offset_bottom = 379.0
 rotation = -0.13439
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_v86rl")
@@ -181,10 +186,10 @@ theme_override_font_sizes/font_size = 35
 text = "Free"
 
 [node name="Label5" type="Label" parent="."]
-offset_left = 229.0
-offset_top = 250.0
-offset_right = 296.0
-offset_bottom = 290.0
+offset_left = 250.0
+offset_top = 205.0
+offset_right = 317.0
+offset_bottom = 245.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_v86rl")
 theme_override_font_sizes/font_size = 35
