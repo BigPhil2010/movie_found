@@ -101,6 +101,7 @@ layout_mode = 2
 size_flags_vertical = 3
 
 [node name="Button1" type="Button" parent="VBoxContainer/HBoxContainer"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
@@ -117,6 +118,7 @@ toggle_mode = true
 text = "BTN1"
 
 [node name="Button2" type="Button" parent="VBoxContainer/HBoxContainer"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
@@ -137,6 +139,7 @@ layout_mode = 2
 size_flags_vertical = 3
 
 [node name="Button3" type="Button" parent="VBoxContainer/HBoxContainer2"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
@@ -153,6 +156,7 @@ toggle_mode = true
 text = "BTN3"
 
 [node name="Button4" type="Button" parent="VBoxContainer/HBoxContainer2"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
@@ -173,6 +177,7 @@ layout_mode = 2
 size_flags_vertical = 3
 
 [node name="Button5" type="Button" parent="VBoxContainer/HBoxContainer3"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
@@ -189,6 +194,7 @@ toggle_mode = true
 text = "BTN5"
 
 [node name="Button6" type="Button" parent="VBoxContainer/HBoxContainer3"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
@@ -209,6 +215,7 @@ layout_mode = 2
 size_flags_vertical = 3
 
 [node name="Button7" type="Button" parent="VBoxContainer/HBoxContainer4"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
@@ -225,6 +232,7 @@ toggle_mode = true
 text = "BTN7"
 
 [node name="Button8" type="Button" parent="VBoxContainer/HBoxContainer4"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
@@ -245,6 +253,7 @@ layout_mode = 2
 size_flags_vertical = 3
 
 [node name="Button9" type="Button" parent="VBoxContainer/HBoxContainer5"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
@@ -261,6 +270,7 @@ toggle_mode = true
 text = "BTN9"
 
 [node name="Button10" type="Button" parent="VBoxContainer/HBoxContainer5"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
