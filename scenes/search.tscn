@@ -1,6 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://cy7sgo7l5d2kl"]
+[gd_scene load_steps=8 format=3 uid="uid://cy7sgo7l5d2kl"]
 
-[ext_resource type="FontFile" uid="uid://c2gn1q550ouoi" path="res://recources/Sansation-Regular.ttf" id="1_cymld"]
+[ext_resource type="FontFile" uid="uid://c2gn1q550ouoi" path="res://recources/fonts/santsation/Sansation-Regular.ttf" id="1_cymld"]
+[ext_resource type="Script" uid="uid://baarcef8asgs6" path="res://scripts/search.gd" id="1_u14sg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j6r5u"]
+content_margin_left = 5.0
+content_margin_top = 0.0
+content_margin_right = 5.0
+content_margin_bottom = 0.0
+bg_color = Color(1, 1, 1, 1)
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_u14sg"]
 font = ExtResource("1_cymld")
@@ -39,6 +50,7 @@ expand_margin_left = 10.0
 expand_margin_right = 10.0
 
 [node name="search" type="Node2D"]
+script = ExtResource("1_u14sg")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 540.0
@@ -47,6 +59,38 @@ offset_bottom = 960.0
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 offset_right = 540.0
 offset_bottom = 960.0
+
+[node name="Button_home" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_cymld")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxFlat_j6r5u")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_j6r5u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_j6r5u")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_j6r5u")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_j6r5u")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_j6r5u")
+theme_override_styles/hover = SubResource("StyleBoxFlat_j6r5u")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_j6r5u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_j6r5u")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_j6r5u")
+theme_override_styles/normal = SubResource("StyleBoxFlat_j6r5u")
+text = "< Home"
 
 [node name="title" type="Label" parent="VBoxContainer"]
 layout_mode = 2
@@ -249,3 +293,5 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_u14sg")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_cymld")
 theme_override_styles/normal = SubResource("StyleBoxFlat_u14sg")
 text = "next"
+
+[connection signal="pressed" from="VBoxContainer/Button_home" to="." method="_on_button_home_pressed"]
