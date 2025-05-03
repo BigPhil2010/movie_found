@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://cy7sgo7l5d2kl"]
 
-[ext_resource type="FontFile" uid="uid://c2gn1q550ouoi" path="res://recources/Sansation-Regular.ttf" id="1_cymld"]
+[ext_resource type="FontFile" uid="uid://c2gn1q550ouoi" path="res://recources/fonts/santsation/Sansation-Regular.ttf" id="1_cymld"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_u14sg"]
 font = ExtResource("1_cymld")
