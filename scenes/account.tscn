@@ -10,17 +10,19 @@
 [ext_resource type="Texture2D" uid="uid://b7gcowsg7qdbq" path="res://recources/images/account_icon.png" id="8_tppj6"]
 [ext_resource type="Texture2D" uid="uid://drb0okkgtn2ct" path="res://recources/images/pencil_icon.png.png" id="9_t0rr2"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ca2pp"]
-bg_color = Color(1, 1, 1, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tr1y6"]
+bg_color = Color(0, 0.424207, 0.936673, 1)
 border_width_top = 5
 border_width_right = 6
-border_color = Color(0, 0, 0, 1)
+border_color = Color(0, 0.423529, 0.937255, 1)
+corner_radius_top_left = 25
 expand_margin_right = 5.0
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_motgx"]
-bg_color = Color(1, 1, 1, 0.705882)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fjo51"]
+bg_color = Color(0, 0.423529, 0.937255, 1)
 border_width_top = 5
-border_color = Color(0, 0, 0, 1)
+border_color = Color(0, 0.423529, 0.937255, 1)
+corner_radius_top_right = 25
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rr2hs"]
 bg_color = Color(0.172833, 0.172833, 0.172833, 1)
@@ -78,17 +80,17 @@ size_flags_vertical = 10
 [node name="menuBTN" type="Button" parent="HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_styles/focus = SubResource("StyleBoxFlat_ca2pp")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_ca2pp")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_ca2pp")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_ca2pp")
-theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_ca2pp")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_ca2pp")
-theme_override_styles/hover = SubResource("StyleBoxFlat_ca2pp")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_ca2pp")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_ca2pp")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_ca2pp")
-theme_override_styles/normal = SubResource("StyleBoxFlat_ca2pp")
+theme_override_styles/focus = SubResource("StyleBoxFlat_tr1y6")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_tr1y6")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_tr1y6")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_tr1y6")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_tr1y6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_tr1y6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tr1y6")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_tr1y6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tr1y6")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_tr1y6")
+theme_override_styles/normal = SubResource("StyleBoxFlat_tr1y6")
 icon = ExtResource("3_4u2qv")
 icon_alignment = 1
 expand_icon = true
@@ -96,17 +98,17 @@ expand_icon = true
 [node name="accountBTN" type="Button" parent="HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_styles/focus = SubResource("StyleBoxFlat_motgx")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_motgx")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_motgx")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_motgx")
-theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_motgx")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_motgx")
-theme_override_styles/hover = SubResource("StyleBoxFlat_motgx")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_motgx")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_motgx")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_motgx")
-theme_override_styles/normal = SubResource("StyleBoxFlat_motgx")
+theme_override_styles/focus = SubResource("StyleBoxFlat_fjo51")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_fjo51")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_fjo51")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_fjo51")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_fjo51")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_fjo51")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fjo51")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_fjo51")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fjo51")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_fjo51")
+theme_override_styles/normal = SubResource("StyleBoxFlat_fjo51")
 icon = ExtResource("4_motgx")
 icon_alignment = 1
 expand_icon = true

@@ -226,5 +226,5 @@ func _on_button_back_pressed() -> void:
 	if G.current_question != 0:
 		check_inputs()
 		G.current_question -= 1
-		get_node("VBoxContainer/HBoxContainer6/Button_next").text = "next"
+		get_node("VBoxContainer/HBoxContainer6/Button_next").text = "Next"
 		load_question(G.questions[G.current_question])

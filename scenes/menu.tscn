@@ -11,16 +11,18 @@
 [ext_resource type="Texture2D" uid="uid://dx88lo3i6v1pl" path="res://recources/images/logo_weiß.png" id="8_13sgg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vjb58"]
-bg_color = Color(1, 1, 1, 0.705882)
+bg_color = Color(0, 0.423529, 0.937255, 1)
 border_width_top = 5
 border_width_right = 6
-border_color = Color(0, 0, 0, 1)
+border_color = Color(0, 0.423529, 0.937255, 1)
+corner_radius_top_left = 25
 expand_margin_right = 5.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_con2f"]
-bg_color = Color(1, 1, 1, 1)
+bg_color = Color(0, 0.423529, 0.937255, 1)
 border_width_top = 5
-border_color = Color(0, 0, 0, 1)
+border_color = Color(0, 0.423529, 0.937255, 1)
+corner_radius_top_right = 25
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_13sgg"]
 bg_color = Color(0.172833, 0.172833, 0.172833, 1)
