@@ -5,13 +5,13 @@
 [ext_resource type="Texture2D" uid="uid://sphk7yexwgkx" path="res://recources/images/logo_border.png" id="3_13sgg"]
 [ext_resource type="FontFile" uid="uid://c2gn1q550ouoi" path="res://recources/fonts/santsation/Sansation-Regular.ttf" id="3_v86rl"]
 [ext_resource type="FontFile" uid="uid://causshvbabg45" path="res://recources/fonts/santsation/Sansation-Bold.ttf" id="4_4ytvr"]
+[ext_resource type="Texture2D" uid="uid://dwihs8l8q3pdt" path="res://recources/images/account_icon_border.png.png" id="4_i6lef"]
 [ext_resource type="Texture2D" uid="uid://bxj2bxocftt7w" path="res://recources/images/netflix_logo.png" id="5_g3eks"]
-[ext_resource type="Texture2D" uid="uid://brwnun3m2elgd" path="res://recources/images/account_icon_border.png" id="5_i6lef"]
 [ext_resource type="Texture2D" uid="uid://di40j4pdapnkf" path="res://recources/images/prime_logo.png" id="7_13sgg"]
 [ext_resource type="Texture2D" uid="uid://dx88lo3i6v1pl" path="res://recources/images/logo_weiß.png" id="8_13sgg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vjb58"]
-bg_color = Color(0.517647, 0.792157, 0.858824, 0.705882)
+bg_color = Color(1, 1, 1, 0.705882)
 border_width_top = 5
 border_width_right = 6
 border_color = Color(0, 0, 0, 1)
@@ -80,7 +80,7 @@ texture = ExtResource("2_i6lef")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 custom_minimum_size = Vector2(0, 60)
-offset_top = 865.0
+offset_top = 880.0
 offset_right = 540.0
 offset_bottom = 960.0
 size_flags_vertical = 10
@@ -117,7 +117,7 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_con2f")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_con2f")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_con2f")
 theme_override_styles/normal = SubResource("StyleBoxFlat_con2f")
-icon = ExtResource("5_i6lef")
+icon = ExtResource("4_i6lef")
 icon_alignment = 1
 expand_icon = true
 
