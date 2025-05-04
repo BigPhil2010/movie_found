@@ -1,11 +1,14 @@
 extends Node
 
-var current_question = 0
 
 var questions = [
 	[["movie or serie", "movie", "serie"],[]],
 	[["where streaming", "netflix", "amazon"],[]]
 ]
+
+var current_question = 0
+var question_amount = questions.size()
+var questions_left = question_amount-(current_question + 1)
 
 var btn1 = false
 var btn2 = false
