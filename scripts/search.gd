@@ -218,7 +218,7 @@ func _on_button_next_pressed() -> void:
 		print(G.questions)
 		get_tree().change_scene_to_file("res://scenes/menu.tscn")
 		return
-	if G.questions_left == 1:
+	if G.current_question + 1 == G.questions.size():
 		get_node("VBoxContainer/HBoxContainer6/Button_next").text = "finish"
 	load_question(G.questions[G.current_question])
 

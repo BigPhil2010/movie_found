@@ -183,13 +183,13 @@ theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_t0rr2")
 theme_override_styles/normal = SubResource("StyleBoxFlat_t0rr2")
 text = "Course"
 
-[node name="Label" type="Label" parent="."]
+[node name="line" type="Label" parent="."]
 offset_top = 229.0
 offset_right = 540.0
 offset_bottom = 254.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_l47cu")
 
-[node name="Label2" type="Label" parent="."]
+[node name="Label_name" type="Label" parent="."]
 offset_left = 260.0
 offset_top = 150.0
 offset_right = 398.0
@@ -199,21 +199,21 @@ theme_override_fonts/font = ExtResource("7_aavio")
 theme_override_font_sizes/font_size = 50
 text = "Name"
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="profile_picture" type="Sprite2D" parent="."]
 position = Vector2(68, 168)
 scale = Vector2(0.08, 0.08)
 texture = ExtResource("8_tppj6")
 
-[node name="Label3" type="Label" parent="."]
-offset_left = 23.0
+[node name="Label_profile_picture" type="Label" parent="."]
+offset_left = 17.0
 offset_top = 220.0
-offset_right = 116.0
+offset_right = 117.0
 offset_bottom = 243.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_aavio")
-text = "profil picture"
+text = "profile picture"
 
-[node name="Button" type="Button" parent="."]
+[node name="NameEdit" type="Button" parent="."]
 custom_minimum_size = Vector2(0, 0.1)
 offset_left = 213.0
 offset_top = 158.0
