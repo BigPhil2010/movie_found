@@ -169,11 +169,11 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_u14sg")
 toggle_mode = true
 text = "BTN6"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+[node name="HBoxContainer1" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Button1" type="Button" parent="VBoxContainer/HBoxContainer"]
+[node name="Button1" type="Button" parent="VBoxContainer/HBoxContainer1"]
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
@@ -189,7 +189,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_u14sg")
 toggle_mode = true
 text = "BTN1"
 
-[node name="Button2" type="Button" parent="VBoxContainer/HBoxContainer"]
+[node name="Button2" type="Button" parent="VBoxContainer/HBoxContainer1"]
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 0
