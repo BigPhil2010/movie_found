@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dx88lo3i6v1pl" path="res://recources/images/logo_weiß.png" id="8_13sgg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vjb58"]
-bg_color = Color(0.517647, 0.792157, 0.858824, 1)
+bg_color = Color(0.517647, 0.792157, 0.858824, 0.705882)
 border_width_top = 5
 border_width_right = 6
 border_color = Color(0, 0, 0, 1)
