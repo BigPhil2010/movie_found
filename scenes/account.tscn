@@ -1,8 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://baeg75mgbl4vk"]
+[gd_scene load_steps=15 format=3 uid="uid://baeg75mgbl4vk"]
 
 [ext_resource type="Script" uid="uid://vtu1yk6qn0s4" path="res://scripts/account.gd" id="1_o8dwq"]
 [ext_resource type="Texture2D" uid="uid://kxypdvag3xim" path="res://recources/images/background.png" id="2_jhb3k"]
-[ext_resource type="Texture2D" uid="uid://sphk7yexwgkx" path="res://recources/images/logo_border.png" id="3_jhb3k"]
+[ext_resource type="Texture2D" uid="uid://c8i468801jcj8" path="res://recources/images/Unbenannt.png" id="3_4u2qv"]
 [ext_resource type="Texture2D" uid="uid://brwnun3m2elgd" path="res://recources/images/account_icon_border.png" id="4_motgx"]
 [ext_resource type="FontFile" uid="uid://causshvbabg45" path="res://recources/fonts/santsation/Sansation-Bold.ttf" id="5_4u2qv"]
 [ext_resource type="Texture2D" uid="uid://dx88lo3i6v1pl" path="res://recources/images/logo_weiß.png" id="6_aavio"]
@@ -15,7 +15,7 @@ border_color = Color(0, 0, 0, 1)
 expand_margin_right = 5.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_motgx"]
-bg_color = Color(0.517647, 0.792157, 0.858824, 0.705882)
+bg_color = Color(1, 1, 1, 0.705882)
 border_width_top = 5
 border_color = Color(0, 0, 0, 1)
 
@@ -50,6 +50,11 @@ border_width_bottom = 4
 border_color = Color(0, 0, 0, 1)
 expand_margin_left = 2.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l47cu"]
+bg_color = Color(1, 1, 1, 0)
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
 [node name="account" type="Node2D"]
 script = ExtResource("1_o8dwq")
 
@@ -59,7 +64,7 @@ offset = Vector2(270, 480)
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 custom_minimum_size = Vector2(0, 60)
-offset_top = 865.0
+offset_top = 880.0
 offset_right = 540.0
 offset_bottom = 960.0
 size_flags_vertical = 10
@@ -78,7 +83,7 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_ca2pp")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_ca2pp")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_ca2pp")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ca2pp")
-icon = ExtResource("3_jhb3k")
+icon = ExtResource("3_4u2qv")
 icon_alignment = 1
 expand_icon = true
 
@@ -126,7 +131,7 @@ offset_top = 360.0
 offset_right = 540.0
 offset_bottom = 420.0
 
-[node name="Button" type="Button" parent="HBoxContainer2"]
+[node name="watchlistBTN" type="Button" parent="HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
@@ -149,7 +154,7 @@ theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_tppj6")
 theme_override_styles/normal = SubResource("StyleBoxFlat_tppj6")
 text = "Watchlist"
 
-[node name="Button2" type="Button" parent="HBoxContainer2"]
+[node name="summaryBTN" type="Button" parent="HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
@@ -171,6 +176,12 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_aavio")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_t0rr2")
 theme_override_styles/normal = SubResource("StyleBoxFlat_t0rr2")
 text = "Summary"
+
+[node name="Label" type="Label" parent="."]
+offset_top = 219.0
+offset_right = 540.0
+offset_bottom = 242.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_l47cu")
 
 [connection signal="pressed" from="HBoxContainer/menuBTN" to="." method="_on_menu_btn_pressed"]
 [connection signal="pressed" from="HBoxContainer/accountBTN" to="." method="_on_account_btn_pressed"]
