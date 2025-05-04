@@ -2,13 +2,15 @@ extends Node
 
 
 var questions = [
-	[["movie or serie", "movie", "serie"],[]],
-	[["where streaming", "netflix", "amazon"],[]]
+	[["movie or series?", "movie", "series"],[]],
+	[["provider?", "Netflix", "Prime Video", "Disney+", "Paramount+", "Apple TV+", "Joyn"],[]],
+	[["max price?", "free", "5€", "10€", "15€", "every price"],[]],
+	[["genre?", "action", "horror", "romance", "Si-Fi", "fantasy", "comedy", "drama", "crime"],[]],
+	[["length?", "45min", "1h", "1.5h", "2h", "2.5h", "3h"],[]],
+	[["which age?", "0", "6", "12", "16", "18"],[]]
 ]
 
 var current_question = 0
-var question_amount = questions.size()
-var questions_left = question_amount-(current_question + 1)
 
 var btn1 = false
 var btn2 = false
