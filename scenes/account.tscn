@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://scripts/account.gd" id="1_o8dwq"]
 [ext_resource type="Texture2D" uid="uid://kxypdvag3xim" path="res://recources/images/background.png" id="2_jhb3k"]
-[ext_resource type="Texture2D" uid="uid://c8i468801jcj8" path="res://recources/images/Unbenannt.png" id="3_4u2qv"]
-[ext_resource type="Texture2D" uid="uid://brwnun3m2elgd" path="res://recources/images/account_icon_border.png" id="4_motgx"]
+[ext_resource type="Texture2D" uid="uid://b75knlhe2ef31" path="res://recources/images/logo_white.png" id="3_tppj6"]
+[ext_resource type="Texture2D" uid="uid://ccabju04i1vu3" path="res://recources/images/account_icon_blue.png" id="4_t0rr2"]
 [ext_resource type="FontFile" uid="uid://causshvbabg45" path="res://recources/fonts/santsation/Sansation-Bold.ttf" id="5_4u2qv"]
 [ext_resource type="Texture2D" uid="uid://dx88lo3i6v1pl" path="res://recources/images/logo_weiß.png" id="6_aavio"]
 [ext_resource type="FontFile" uid="uid://c2gn1q550ouoi" path="res://recources/fonts/santsation/Sansation-Regular.ttf" id="7_aavio"]
@@ -11,17 +11,17 @@
 [ext_resource type="Texture2D" uid="uid://drb0okkgtn2ct" path="res://recources/images/pencil_icon.png.png" id="9_t0rr2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tr1y6"]
-bg_color = Color(0, 0.424207, 0.936673, 1)
+bg_color = Color(0.172549, 0.172549, 0.172549, 1)
 border_width_top = 5
 border_width_right = 6
-border_color = Color(0, 0.423529, 0.937255, 1)
+border_color = Color(0.172549, 0.172549, 0.172549, 1)
 corner_radius_top_left = 25
 expand_margin_right = 5.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fjo51"]
-bg_color = Color(0, 0.423529, 0.937255, 1)
+bg_color = Color(0.172549, 0.172549, 0.172549, 1)
 border_width_top = 5
-border_color = Color(0, 0.423529, 0.937255, 1)
+border_color = Color(0.172549, 0.172549, 0.172549, 1)
 corner_radius_top_right = 25
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rr2hs"]
@@ -91,7 +91,7 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_tr1y6")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_tr1y6")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_tr1y6")
 theme_override_styles/normal = SubResource("StyleBoxFlat_tr1y6")
-icon = ExtResource("3_4u2qv")
+icon = ExtResource("3_tppj6")
 icon_alignment = 1
 expand_icon = true
 
@@ -109,7 +109,7 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_fjo51")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_fjo51")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_fjo51")
 theme_override_styles/normal = SubResource("StyleBoxFlat_fjo51")
-icon = ExtResource("4_motgx")
+icon = ExtResource("4_t0rr2")
 icon_alignment = 1
 expand_icon = true
 
