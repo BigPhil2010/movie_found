@@ -30,11 +30,12 @@ expand_margin_right = 10.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cymld"]
 bg_color = Color(0.266667, 0.556863, 0.827451, 1)
-border_width_left = 3
-border_width_top = 3
-border_width_right = 3
-border_width_bottom = 3
+border_width_left = 30
+border_width_top = 20
+border_width_right = 30
+border_width_bottom = 20
 border_color = Color(0.406106, 0.691116, 0.377088, 1)
+border_blend = true
 corner_radius_top_left = 25
 corner_radius_top_right = 25
 corner_radius_bottom_right = 25
