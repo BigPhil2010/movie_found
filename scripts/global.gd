@@ -4,6 +4,8 @@ func _ready() -> void:
 	#print(questions_to_json("blub"))
 	pass
 
+var current_json = ""
+
 var questions = [
 	[["movie or series?", "movie", "series"],[]],
 	[["provider?", "Netflix", "Prime Video", "Disney+", "Paramount+", "Apple TV+", "Joyn"],[]],
@@ -49,5 +51,15 @@ func questions_to_json(data):
 	
 	
 	json = """{"type": """ + str(type) + """, "provider": """ + str(provider) + """, "max_price": """ + str(max_price) + """, "genre": """ + str(genre) + """, "length": """ + str(length) + """, "age_rating": """ + str(age_rating) + """}"""
+	
+	questions = [
+	[["movie or series?", "movie", "series"],[]],
+	[["provider?", "Netflix", "Prime Video", "Disney+", "Paramount+", "Apple TV+", "Joyn"],[]],
+	[["max price?", "free", "5€", "10€", "15€", "every price"],[]],
+	[["genre?", "action", "horror", "romance", "Si-Fi", "fantasy", "comedy", "drama", "crime"],[]],
+	[["length?", "45min", "1h", "1.5h", "2h", "2.5h", "3h"],[]],
+	[["which age?", "0", "6", "12", "16", "18"],[]]
+	]
+	current_question = 0
 	
 	return(json)

@@ -177,27 +177,26 @@ func next_biggest_even(num):
 
 
 func check_inputs():
-	G.questions[G.current_question][1] = []
 	if get_node("VBoxContainer/HBoxContainer1/Button1").button_pressed == true:
-		G.questions[G.current_question][1].insert(G.questions[G.current_question][1].size(), 1)
+		G.questions[G.current_question][1].insert(0, 1)
 	if get_node("VBoxContainer/HBoxContainer1/Button2").button_pressed == true:
-		G.questions[G.current_question][1].insert(G.questions[G.current_question][1].size(), 2)
+		G.questions[G.current_question][1].insert(0, 2)
 	if get_node("VBoxContainer/HBoxContainer2/Button3").button_pressed == true:
-		G.questions[G.current_question][1].insert(G.questions[G.current_question][1].size(), 3)
+		G.questions[G.current_question][1].insert(0, 3)
 	if get_node("VBoxContainer/HBoxContainer2/Button4").button_pressed == true:
-		G.questions[G.current_question][1].insert(G.questions[G.current_question][1].size(), 4)
+		G.questions[G.current_question][1].insert(0, 4)
 	if get_node("VBoxContainer/HBoxContainer3/Button5").button_pressed == true:
-		G.questions[G.current_question][1].insert(G.questions[G.current_question][1].size(), 5)
+		G.questions[G.current_question][1].insert(0, 5)
 	if get_node("VBoxContainer/HBoxContainer3/Button6").button_pressed == true:
-		G.questions[G.current_question][1].insert(G.questions[G.current_question][1].size(), 6)
+		G.questions[G.current_question][1].insert(0, 6)
 	if get_node("VBoxContainer/HBoxContainer4/Button7").button_pressed == true:
-		G.questions[G.current_question][1].insert(G.questions[G.current_question][1].size(), 7)
+		G.questions[G.current_question][1].insert(0, 7)
 	if get_node("VBoxContainer/HBoxContainer4/Button8").button_pressed == true:
-		G.questions[G.current_question][1].insert(G.questions[G.current_question][1].size(), 8)
+		G.questions[G.current_question][1].insert(0, 8)
 	if get_node("VBoxContainer/HBoxContainer5/Button9").button_pressed == true:
-		G.questions[G.current_question][1].insert(G.questions[G.current_question][1].size(), 9)
+		G.questions[G.current_question][1].insert(0, 9)
 	if get_node("VBoxContainer/HBoxContainer5/Button10").button_pressed == true:
-		G.questions[G.current_question][1].insert(G.questions[G.current_question][1].size(), 10)
+		G.questions[G.current_question][1].insert(0, 10)
 
 
 func load_question(question):
@@ -210,13 +209,14 @@ func load_question(question):
 func reset_answers():
 	for i in G.questions:
 		i[1] = []
+	G.current_question = 0
 
 func _on_button_next_pressed() -> void:
 	check_inputs()
 	G.current_question += 1
 	if get_node("VBoxContainer/HBoxContainer6/Button_next").text == "finish":
-		print(G.questions_to_json(G.questions))
-		get_tree().change_scene_to_file("res://scenes/menu.tscn")
+		G.current_json = G.questions_to_json(G.questions)
+		get_tree().change_scene_to_file("res://scenes/result.tscn")
 		return
 	if G.current_question + 1 == G.questions.size():
 		get_node("VBoxContainer/HBoxContainer6/Button_next").text = "finish"
