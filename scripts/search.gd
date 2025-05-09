@@ -215,7 +215,7 @@ func _on_button_next_pressed() -> void:
 	check_inputs()
 	G.current_question += 1
 	if get_node("VBoxContainer/HBoxContainer6/Button_next").text == "finish":
-		print(G.questions)
+		print(G.questions_to_json(G.questions))
 		get_tree().change_scene_to_file("res://scenes/menu.tscn")
 		return
 	if G.current_question + 1 == G.questions.size():
